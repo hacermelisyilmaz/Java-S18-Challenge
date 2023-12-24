@@ -9,6 +9,5 @@ public interface AuthorService {
     List<Author> findAll();
     Author findById(Long id);
     Author save(Author author);
-    Book saveToAuthor(Long bookId);
     Author delete(Long id);
 }

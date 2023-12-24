@@ -35,11 +35,6 @@ public class AuthorServiceImpl implements AuthorService {
     }
 
     @Override
-    public Book saveToAuthor(Long bookId) {
-        return null;
-    }
-
-    @Override
     public Author delete(Long id) {
         Author author = findById(id);
         if (author == null) throw new RuntimeException("Author with this ID not found: " + id);

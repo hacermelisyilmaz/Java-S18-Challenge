@@ -1,14 +1,9 @@
 package com.workintech.library.controller;
 
-import com.workintech.library.entity.Author;
 import com.workintech.library.entity.Category;
-import com.workintech.library.entity.Category;
-import com.workintech.library.service.AuthorService;
-import com.workintech.library.entity.CategoryService;
-import com.workintech.library.service.BookService;
 import com.workintech.library.service.CategoryService;
+
 import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -18,8 +13,6 @@ import java.util.List;
 @RequestMapping("/category")
 public class CategoryController {
     private final CategoryService categoryService;
-    private final BookService bookService;
-    private final AuthorService authorService;
 
     @GetMapping
     public List<Category> findAll() {

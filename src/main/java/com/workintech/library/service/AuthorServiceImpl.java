@@ -1,9 +1,7 @@
 package com.workintech.library.service;
 
 import com.workintech.library.dao.AuthorDao;
-import com.workintech.library.dao.BookDao;
 import com.workintech.library.entity.Author;
-import com.workintech.library.entity.Book;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +12,6 @@ import java.util.Optional;
 @Service
 public class AuthorServiceImpl implements AuthorService {
     private final AuthorDao authorDao;
-    private final BookDao bookDao;
 
     @Override
     public List<Author> findAll() {
